@@ -23,8 +23,6 @@ export default StyleSheet.create({
         marginRight: 78
     },
     tag:{
-        fontSize: 14,
-        color: "#757575",
         marginRight: 31,
         height:26,
         width: 29,
@@ -32,16 +30,16 @@ export default StyleSheet.create({
         borderBottomWidth: 2,
         borderColor:"#fff"
     },
-    tag_r:{
-        color: "#fff"
+    tag_text:{
+        fontSize: 14,
+        color: "#757575",
+        fontWeight: "bold"
+    },
+    tag_text_active:{
+        color: "#3d3d3d"
     },
     tag_active:{
-        color: "#3d3d3d",
         borderColor:"#3d3d3d"
-    },
-    tag_active_r:{
-        color: "#3d3d3d",
-        borderColor:"#fff"
     },
     top_left:{
          marginLeft:16,

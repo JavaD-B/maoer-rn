@@ -5,6 +5,7 @@ import style from "./style_home"
 import boy from "../../assets/boy.png"
 
 import Recommend from "../../component/recommend/Recommend"
+import Classification from '../../component/classification/Classification';
 
 interface Props{
 
@@ -65,7 +66,7 @@ export default class Home extends Component<Props, State> {
                                                 <View
                                                     style={{...style.tag,...(this.state.page===item.title&&style.tag_active)}}
                                                 >
-                                                    <Text>{item.title}</Text>
+                                                    <Text style={{...style.tag_text,...(this.state.page===item.title&&style.tag_text_active)}}>{item.title}</Text>
                                                 </View>
                                             </TouchableWithoutFeedback>
                                         ))
@@ -83,9 +84,7 @@ export default class Home extends Component<Props, State> {
                     initialPage={1}
                     onChange={this.onTabChange}
                 >
-                    <View>
-                        <Text>123</Text>
-                    </View>
+                    <Classification></Classification>
                     <Recommend></Recommend>
                     <View>
                         <Text>123</Text>

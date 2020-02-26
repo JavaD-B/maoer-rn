@@ -24,7 +24,7 @@ export default class SmallBanner extends Component< Props, State> {
                     {
                         this.props.smallBannerList.map(item => {
                             return (
-                                <View>
+                                <View key={item.pic+"smallBanner"}>
                                     <Image source={{uri: item.pic}} style={style.item}/>
                                 </View>
                             )
